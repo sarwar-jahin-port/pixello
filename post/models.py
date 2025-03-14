@@ -1,6 +1,7 @@
 from django.db import models
 from user.models import User
 from post.validators import validate_image_size, validate_youtube_url
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -16,7 +17,7 @@ class Post(models.Model):
     
 class PostImage(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='images')
-    images = models.ImageField(upload_to='posts/images', blank=True, validators=[validate_image_size])
+    images = CloudinaryField('image')
 
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='likes')
