@@ -1,13 +1,33 @@
 {
-    "builds": [{
+    "builds": [
+      {
         "src": "pixello/wsgi.py",
-        "use": "@ardnt/vercel-python-wsgi",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
-    }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "pixello/wsgi.py"
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "25mb",
+          "runtime": "python3.10.12",
+          "includeFiles": [
+            "**/*.py",
+            "requirements.txt",
+            "static/**",
+            "media/**",
+            "pixello/**"
+          ]
         }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/media/(.*)",
+        "dest": "/media/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "pixello/wsgi.py"
+      }
     ]
-}
+  }
