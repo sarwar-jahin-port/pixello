@@ -1,0 +1,342 @@
+[
+    {
+      "model": "user.user",
+      "pk": 1,
+      "fields": {
+        "username": "user1",
+        "first_name": "Alice",
+        "last_name": "Smith",
+        "email": "alice.smith@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:00:00Z",
+        "phone": "+15551234567",
+        "location": "New York"
+      }
+    },
+    {
+      "model": "user.user",
+      "pk": 2,
+      "fields": {
+        "username": "user2",
+        "first_name": "Bob",
+        "last_name": "Johnson",
+        "email": "bob.johnson@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:01:00Z",
+        "phone": "+442079460958",
+        "location": "London"
+      }
+    },
+    {
+      "model": "user.user",
+      "pk": 3,
+      "fields": {
+        "username": "user3",
+        "first_name": "Charlie",
+        "last_name": "Williams",
+        "email": "charlie.williams@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:02:00Z",
+        "phone": "+61291234567",
+        "location": "Sydney"
+      }
+    },
+    {
+      "model": "user.user",
+      "pk": 4,
+      "fields": {
+        "username": "user4",
+        "first_name": "David",
+        "last_name": "Brown",
+        "email": "david.brown@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:03:00Z",
+        "phone": "+81312345678",
+        "location": "Tokyo"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 5,
+      "fields": {
+        "username": "user5",
+        "first_name": "Eve",
+        "last_name": "Davis",
+        "email": "eve.davis@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:04:00Z",
+        "phone": "+33123456789",
+        "location": "Paris"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 6,
+      "fields": {
+        "username": "user6",
+        "first_name": "Frank",
+        "last_name": "Miller",
+        "email": "frank.miller@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:05:00Z",
+        "phone": "+49301234567",
+        "location": "Berlin"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 7,
+      "fields": {
+        "username": "user7",
+        "first_name": "Grace",
+        "last_name": "Wilson",
+        "email": "grace.wilson@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:06:00Z",
+        "phone": "+86101234567",
+        "location": "Beijing"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 8,
+      "fields": {
+        "username": "user8",
+        "first_name": "Henry",
+        "last_name": "Moore",
+        "email": "henry.moore@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:07:00Z",
+        "phone": "+91111234567",
+        "location": "Delhi"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 9,
+      "fields": {
+        "username": "user9",
+        "first_name": "Ivy",
+        "last_name": "Taylor",
+        "email": "ivy.taylor@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:08:00Z",
+        "phone": "+55111234567",
+        "location": "Sao Paulo"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 10,
+      "fields": {
+        "username": "user10",
+        "first_name": "Jack",
+        "last_name": "Anderson",
+        "email": "jack.anderson@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:09:00Z",
+        "phone": "+27111234567",
+        "location": "Johannesburg"
+      }
+    },
+      {
+      "model": "user.user",
+      "pk": 11,
+      "fields": {
+        "username": "user11",
+        "first_name": "Katie",
+        "last_name": "Thomas",
+        "email": "katie.thomas@example.com",
+        "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+        "is_staff": false,
+        "is_active": true,
+        "is_superuser": false,
+        "date_joined": "2023-10-27T09:09:00Z",
+        "phone": "+27111234567",
+        "location": "Johannesburg"
+      }
+    },
+    {
+    "model": "user.user",
+    "pk": 12,
+    "fields": {
+      "username": "user12",
+      "first_name": "Liam",
+      "last_name": "Jackson",
+      "email": "liam.jackson@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:11:00Z",
+      "phone": "+39061234567",
+      "location": "Rome"
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 13,
+    "fields": {
+      "username": "user13",
+      "first_name": "Mia",
+      "last_name": "White",
+      "email": "mia.white@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:12:00Z",
+      "phone": "+34911234567",
+      "location": "Madrid"
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 14,
+    "fields": {
+      "username": "user14",
+      "first_name": "Noah",
+      "last_name": "Harris",
+      "email": "noah.harris@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:13:00Z",
+      "phone": "+16131234567",
+      "location": "Ottawa"
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 15,
+    "fields": {
+      "username": "user15",
+      "first_name": "Olivia",
+      "last_name": "Martin",
+      "email": "olivia.martin@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:14:00Z",
+      "phone": "+52551234567",
+      "location": "Mexico City"
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 16,
+    "fields": {
+      "username": "user16",
+      "first_name": "Peter",
+      "last_name": "Thompson",
+      "email": "peter.thompson@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:15:00Z",
+      "phone": "+48221234567",
+      "location": "Warsaw"
+    }
+  },
+    {
+    "model": "user.user",
+    "pk": 17,
+    "fields": {
+      "username": "user17",
+      "first_name": "Quinn",
+      "last_name": "Garcia",
+      "email": "quinn.garcia@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:16:00Z",
+      "phone": "+351211234567",
+      "location": "Lisbon"
+    }
+  },
+    {
+    "model": "user.user",
+    "pk": 18,
+    "fields": {
+      "username": "user18",
+      "first_name": "Rachel",
+      "last_name": "Rodriguez",
+      "email": "rachel.rodriguez@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:17:00Z",
+      "phone": "+97141234567",
+      "location": "Dubai"
+    }
+  },
+    {
+    "model": "user.user",
+    "pk": 19,
+    "fields": {
+      "username": "user19",
+      "first_name": "Samuel",
+      "last_name": "Lee",
+      "email": "samuel.lee@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:18:00Z",
+      "phone": "+82212345678",
+      "location": "Seoul"
+    }
+  },
+    {
+    "model": "user.user",
+    "pk": 20,
+    "fields": {
+      "username": "user20",
+      "first_name": "Taylor",
+      "last_name": "Walker",
+      "email": "taylor.walker@example.com",
+      "password": "pbkdf2_sha256$600000$randomsalt$hashedpassword",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-10-27T09:19:00Z",
+      "phone": "+6561234567",
+      "location": "Singapore"
+    }
+  }    
+]

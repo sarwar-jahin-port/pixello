@@ -1,0 +1,178 @@
+[
+    {
+      "model": "post.post",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "content": "Just had the best coffee ever! ☕",
+        "video_url": "",
+        "created_at": "2023-10-27T10:00:00Z",
+        "updated_at": "2023-10-27T10:00:00Z"
+      }
+    },
+    {
+      "model": "post.post",
+      "pk": 2,
+      "fields": {
+        "user": 2,
+        "content": "Exploring new hiking trails today. 🏞️",
+        "video_url": "",
+        "created_at": "2023-10-27T10:01:00Z",
+        "updated_at": "2023-10-27T10:01:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 3,
+      "fields": {
+        "user": 3,
+        "content": "Check out this amazing sunset! 🌅",
+        "video_url": "",
+        "created_at": "2023-10-27T10:02:00Z",
+        "updated_at": "2023-10-27T10:02:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 4,
+      "fields": {
+        "user": 4,
+        "content": "Learning Python is so much fun! 🐍",
+        "video_url": "",
+        "created_at": "2023-10-27T10:03:00Z",
+        "updated_at": "2023-10-27T10:03:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 5,
+      "fields": {
+        "user": 5,
+        "content": "My cat is being extra cute today. 😻",
+        "video_url": "",
+        "created_at": "2023-10-27T10:04:00Z",
+        "updated_at": "2023-10-27T10:04:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 6,
+      "fields": {
+        "user": 6,
+        "content": "Trying out a new recipe tonight. Wish me luck! 🍲",
+        "video_url": "",
+        "created_at": "2023-10-27T10:05:00Z",
+        "updated_at": "2023-10-27T10:05:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 7,
+      "fields": {
+        "user": 7,
+        "content": "Anyone have recommendations for good books? 📚",
+        "video_url": "",
+        "created_at": "2023-10-27T10:06:00Z",
+        "updated_at": "2023-10-27T10:06:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 8,
+      "fields": {
+        "user": 8,
+        "content": "Just finished a great workout! 💪",
+        "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "created_at": "2023-10-27T10:07:00Z",
+        "updated_at": "2023-10-27T10:07:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 9,
+      "fields": {
+        "user": 9,
+        "content": "Love the sound of rain on a tin roof. 🌧️",
+        "video_url": "",
+        "created_at": "2023-10-27T10:08:00Z",
+        "updated_at": "2023-10-27T10:08:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 10,
+      "fields": {
+        "user": 10,
+        "content": "Dreaming of my next vacation. ✈️",
+        "video_url": "",
+        "created_at": "2023-10-27T10:09:00Z",
+        "updated_at": "2023-10-27T10:09:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 11,
+      "fields": {
+        "user": 11,
+        "content": "Coding late into the night. 💻",
+        "video_url": "",
+        "created_at": "2023-10-27T10:10:00Z",
+        "updated_at": "2023-10-27T10:10:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 12,
+      "fields": {
+        "user": 12,
+        "content": "Found a hidden gem of a cafe. ☕🍰",
+        "video_url": "",
+        "created_at": "2023-10-27T10:11:00Z",
+        "updated_at": "2023-10-27T10:11:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 13,
+      "fields": {
+        "user": 13,
+        "content": "Best music playlist for studying? 🎶",
+        "video_url": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+        "created_at": "2023-10-27T10:12:00Z",
+        "updated_at": "2023-10-27T10:12:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 14,
+        "fields": {
+        "user": 14,
+        "content": "Enjoying a peaceful morning. 🧘",
+        "video_url": "",
+        "created_at": "2023-10-27T10:13:00Z",
+        "updated_at": "2023-10-27T10:13:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 15,
+        "fields": {
+        "user": 15,
+        "content": "My dog is my best friend. 🐶",
+        "video_url": "",
+        "created_at": "2023-10-27T10:14:00Z",
+        "updated_at": "2023-10-27T10:14:00Z"
+      }
+    },
+      {
+      "model": "post.post",
+      "pk": 16,
+        "fields": {
+        "user": 16,
+        "content": "Trying to learn a new language. 🗣️",
+        "video_url": "",
+        "created_at": "2023-10-27T10:15:00Z",
+        "updated_at": "2023-10-27T10:15:00Z"
+      }
+    }
+]
