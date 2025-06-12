@@ -2,7 +2,6 @@ from django.urls import path, include
 from rest_framework_nested import routers
 from post.views import PostViewSet, CommentViewSet, LikeViewSet, PostImageViewSet
 from api import views
-from django.views.decorators.csrf import csrf_exempt
 
 router = routers.DefaultRouter()
 router.register('posts', PostViewSet, basename='post')
