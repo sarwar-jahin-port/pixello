@@ -59,7 +59,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://your-production-frontend-domain.vercel.app",  # your deployed frontend domain if needed
+    "https://pixello-client.vercel.app",
 ]
 
 ROOT_URLCONF = 'pixello.urls'
