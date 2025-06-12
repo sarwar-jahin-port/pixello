@@ -14,7 +14,7 @@ class SimpleUserSerializer(serializers.ModelSerializer):
         return obj.get_full_name()
 
 class PostImageSerializer(serializers.ModelSerializer):
-    images = serializers.ImageField()
+    images = serializers.ImageField(read_only=True)
     class Meta:
         model = PostImage
         fields = ['id', 'images']
