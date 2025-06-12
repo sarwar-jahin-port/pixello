@@ -19,7 +19,7 @@ class Post(models.Model):
         return self.content
     
 class PostImage(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='images')
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='image')
     images = CloudinaryField('image')
 
 class Like(models.Model):

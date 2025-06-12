@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-dfp3tf+^kfyepvkyx%7*)e4*hxry88@t%z20*2aj+g*p(-k##*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [".vercel.app", "127.0.0.1"]
+ALLOWED_HOSTS = [".vercel.app", "127.0.0.1", ]
 AUTH_USER_MODEL = 'user.User'
 
 # Application definition
@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -53,6 +55,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://your-production-frontend-domain.vercel.app",  # your deployed frontend domain if needed
 ]
 
 ROOT_URLCONF = 'pixello.urls'
@@ -210,3 +217,4 @@ SOCIALACCOUNT_PROVIDERS = {
 
 SOCIALACCOUNT_LOGIN_ON_GET=True
 LOGIN_REDIRECT_URL = 'api-root'
+BACKEND_URL = config("BACKEND_URL")

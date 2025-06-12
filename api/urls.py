@@ -1,6 +1,8 @@
 from django.urls import path, include
 from rest_framework_nested import routers
 from post.views import PostViewSet, CommentViewSet, LikeViewSet, PostImageViewSet
+from api import views
+from django.views.decorators.csrf import csrf_exempt
 
 router = routers.DefaultRouter()
 router.register('posts', PostViewSet, basename='post')
@@ -14,4 +16,7 @@ urlpatterns = [
     path('', include(posts_router.urls)),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
+    path('payment/initiate/', views.InitiatePaymentAPIView.as_view(), name="initiate_payment"),
+    path('payment/success/', views.payment_success, name="payment_success"),
+    path('payment/failed/', views.payment_failed, name="payment_failed")
 ]
