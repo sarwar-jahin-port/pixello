@@ -17,5 +17,6 @@ urlpatterns = [
     path('auth/', include('djoser.urls.jwt')),
     path('payment/initiate/', views.InitiatePaymentAPIView.as_view(), name="initiate_payment"),
     path('payment/success/', views.payment_success, name="payment_success"),
-    path('payment/failed/', views.payment_failed, name="payment_failed")
+    path('payment/failed/', views.payment_failed, name="payment_failed"),
+    path('payment/cancelled/', views.payment_cancelled, name="payment_cancelled")
 ]

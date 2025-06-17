@@ -6,6 +6,7 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
     phone = models.CharField(max_length=15, blank=True)
     location = models.CharField(max_length=100, blank=True)
+    premium = models.BooleanField(default=False)
 
     def __str__(self):
         return self.username
