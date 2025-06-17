@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dfp3tf+^kfyepvkyx%7*)e4*hxry88@t%z20*2aj+g*p(-k##*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [".vercel.app", "127.0.0.1", ]
 AUTH_USER_MODEL = 'user.User'
@@ -176,6 +176,7 @@ DJOSER = {
         'user_create': 'user.serializers.UserCreateSerializer',
         'current_user': 'user.serializers.UserSerializer'
     },
+    'TOKEN_MODEL': None,
 }
 
 SWAGGER_SETTINGS = {
@@ -218,3 +219,4 @@ SOCIALACCOUNT_PROVIDERS = {
 SOCIALACCOUNT_LOGIN_ON_GET=True
 LOGIN_REDIRECT_URL = 'api-root'
 BACKEND_URL = config("BACKEND_URL")
+FRONTEND_URL = config("FRONTEND_URL")
