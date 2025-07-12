@@ -2,9 +2,11 @@ from django.urls import path, include
 from rest_framework_nested import routers
 from post.views import PostViewSet, CommentViewSet, LikeViewSet, PostImageViewSet
 from api import views
-
+from user.views import FriendRequestViewSet, UserViewSet
 router = routers.DefaultRouter()
 router.register('posts', PostViewSet, basename='post')
+router.register('users', UserViewSet, basename='user')
+router.register('friend-requests', FriendRequestViewSet, basename='friendrequest')
 
 posts_router = routers.NestedDefaultRouter(router, 'posts', lookup='post')
 posts_router.register('comments', CommentViewSet, basename='post-comments')
