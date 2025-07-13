@@ -12,6 +12,7 @@ class FriendRequestViewSet(
     mixins.ListModelMixin,
     mixins.RetrieveModelMixin,
     mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
     viewsets.GenericViewSet
 ):
     queryset         = FriendRequest.objects.all()
@@ -70,7 +71,7 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
 
         # 1. Get friends
         connections = user.connections.all()
-
+        print(connections)
         # 2. Get IDs from pending friend requests (sent or received)
         sent_requests     = FriendRequest.objects.filter(from_user=user, status=FriendRequest.PENDING).values_list('to_user', flat=True)
         received_requests = FriendRequest.objects.filter(to_user=user,   status=FriendRequest.PENDING).values_list('from_user', flat=True)
@@ -81,7 +82,7 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
 
         # 3. Exclude those users
         candidates = User.objects.exclude(id__in=excluded_ids)
-
+        print(candidates)
         # 4. Randomly pick (e.g., 5 users)
         candidate_ids = list(candidates.values_list('id', flat=True))
         selected_ids = random.sample(candidate_ids, min(len(candidate_ids), 3))
