@@ -49,3 +49,8 @@ class FriendRequest(models.Model):
     def reject(self):
         self.status = self.REJECTED
         self.save()
+
+    def delete(self, *args, **kwargs):
+        if self.status == self.ACCEPTED:
+            self.from_user.connections.remove(self.to_user)
+        super().delete(*args, **kwargs)
